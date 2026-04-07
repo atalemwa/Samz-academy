@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samz Academy Hoima</title>
+    <style> 
+        *{
+            list-style-type:none;
+            text-decoration: none;
+ margin: 0;
+padding: 0;
+
+        }
+
+        
+              /* Header / Navbar */
+        .navbar {
+            position: sticky;
+            top: 0;
+            background: rgba(255,255,255,0.96);
+            backdrop-filter: blur(8px);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+            z-index: 1000;
+            padding: 18px 15px;
+        }
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          
+        }
+        .logo h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #3b2e1e, #f97316);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            letter-spacing: 0.5px;
+           
+
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #b3c72f,
+    4px 4px 0 #703737,
+    6px 6px 0 #75750b,
+    6px 6px 0 #7d2626,
+    6px 6px 0 #000;
+
+
+        }
+         .logo h1:hover {
+            transform: scale(1.2);
+               transition: transform 0.8s ease;
+        }
+         p {
+            font-size: 1rem;
+            font-weight: bold;
+            color: #171718;
+            letter-spacing: 1px;
+        }
+        .vv{
+            text-align: center;
+    font-size: 1.4rem;
+    padding: 15px 0;
+    background: linear-gradient(to right, #b3c72f, #f97316);
+    color: white;
+    font-weight: bold;
+
+}
+
+    
+        .nav-links {
+            display: flex;
+            gap: 35px;
+            align-items: center;
+            list-style: none;
+        }
+        .nav-links a {
+            text-decoration: none;
+            font-weight: 600;
+            color: #310c90;
+            transition: 0.2s;
+             text-shadow: 1px 1px 0 #b3c72f,
+    4px 4px 0 #703737,
+    6px 6px 0 #75750b,
+    6px 6px 0 #7d2626,
+    6px 6px 0 #000;
+    font-size: 2rem;
+        }
+        .nav-links a:hover {
+            color: #f97316;
+        }
+        
+        
+           /* Hero Section */
+        .hero {
+            background: linear-gradient(105deg, #fff6ed 0%, #ffe8dc 100%);
+            padding: 2px 10px 90px;} 
+.hero-grid {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+        .hero-stats {
+            display: flex;
+           
+            gap: 32px;
+            margin-top: 30px;
+        }
+         .hero-image {
+            flex: 1;
+            text-align: center;
+         }
+        .hero-image img {
+            max-width: 100%;
+            border-radius: 40px;
+            box-shadow: 0 30px 40px -20px rgba(0,0,0,0.2);
+        
+          transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+         .hero-image:hover img {
+            transform: scale(1.04) rotate(1deg);
+        }
+         .hero-content p {
+            font-size: 1.1rem;
+            color: #334155;
+            margin-bottom: 32px;
+            max-width: 500px;
+        }
+          .stat h3 {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #f97316;
+        }
+         .hero-content {
+            flex: 1;
+        }
+         .hero-content h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            color: #0f172a;
+        }
+        .hero-content p {
+            font-size: 1.1rem;
+            color: #334155;
+            margin-bottom: 32px;
+            max-width: 500px;
+        }
+          /* Features / About section */
+         .section {
+            padding: 80px 0;
+          background-color: #059688;
+          
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 3rem;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 16px;}
+        .section-sub {
+            text-align: center;
+            color:white;
+            max-width: 680px;
+            margin: 0 auto 48px;
+        }
+        .cards-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center
+        }
+             .card {
+            background:  #b3c72f;
+            border-radius: 32px;
+            padding: 32px 28px;
+            text-align: center;
+            box-shadow: 0 15px 35px -12px rgba(0,0,0,0.05);
+            transition: 0.25s ease;
+            flex: 1 1 240px;
+            border: 1px solid #1a1a1a;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            background-color: #cf7b14;
+            border-color: #fbd5ff;
+        }
+        .card i {
+            font-size: 2.5rem;
+            color: #f97316;
+            margin-bottom: 20px;
+        }
+        .card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 12px;
+        }
+        /* Programs */
+        .programs {
+           background-color: #737473;
+        }
+       
+         .program-card {
+          background: #3f7085;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 12px 28px -8px rgba(0,0,0,0.05);
+            transition: 1.2s;
+            flex: 1 1 280px;
+            height: 100px;
+            padding: 3rem 1rem;
+          
+        }
+        .program-card:hover {
+            transform: scale(1.01);
+             background: #6a3f21;
+        }
+        
+          .learn-link {
+            color: #f97316;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        
+        /* CTA section */
+        .cta {
+            background: linear-gradient(120deg, #0f172a, #1e293b);
+            color: white;
+            border-radius: 48px;
+            margin: 40px auto 60px;
+            padding: 60px 40px;
+            text-align: center;
+        }
+        .cta h2 {
+            font-size: 2.2rem;
+            margin-bottom: 16px;
+        }
+        .cta .btn-primary {
+            background: #f97316;
+            margin-top: 20px;
+        }
+p{
+    color: white;
+}
+  /* Footer */
+        footer {
+            background: #0d121e;
+            color: #cbd5e1;
+            padding: 2rem 1rem 1rem;
+        }
+        .footer-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        .footer-col h4 {
+            color: orange;
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+        .footer-col p, .footer-col a {
+            color: rgb(247, 241, 242);
+            text-decoration: none;
+            line-height: 1.8;
+        }
+        .copyright {
+            text-align: center;
+            border-top: 1px solid #334155;
+            padding-top: 30px;
+        
+           
+        }
+        .av{
+    font-size: 1.1rem;
+ font-weight: bold;
+ 
+        }
+       
+    </style>
+</head>
+<body> 
+    <header class="navbar">
+    <div class="container nav-wrapper">
+        <div class="logo">
+            <h1><i>Samz Academy</i></h1>
+      
+        </div>
+        
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#programs">Programs</a></li>
+            
+            <li><a href="#contact">Contact</a></li>  
+        </ul>
+    </div>
+</header>
+<br>
+      <p class="vv"><marquee>INSPIRE · EMPOWER · EXCEL</marquee></p>
+      <br>
+       <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <h1>Where young minds <br>blossom into leaders</h1>
+                <p>Samz Academy offers a world-class curriculum, modern facilities, and a nurturing environment that shapes the innovators of tomorrow.</p>
+                <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+                    <a href="#" class="btn-primary"> Take a tour</a>
+                    <a href="#" class="btn-outline"> Prospectus</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat"><h3>1200+</h3><p>Students</p></div>
+                    <div class="stat"><h3>85+</h3><p>Faculty</p></div>
+                    <div class="stat"><h3>98%</h3><p>Parent Satisfaction</p></div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="school6.jpg" alt="School Campus">
+            </div>
+        </div>
+    </section>
+     <!-- About / Features -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-title">Why Choose  Samz Academy?</div>
+            <div class="section-sub">A holistic approach that nurtures academic excellence, character, and creativity.</div>
+            <div class="cards-grid">
+                <div class="card"><h3>Expert Teachers</h3><p>Passionate educators dedicated to personalized mentoring and innovative teaching.</p></div>
+                <div class="card"><h3>STEM Labs</h3><p>State-of-the-art labs, robotics, and AI-integrated learning modules.</p></div>
+                <div class="card"><h3>Sports & Arts</h3><p>Championship fields, music studios, and after-school clubs for all interests.</p></div>
+                <div class="card"><h3>Global Exchange</h3><p>International collaborations & student exchange programs.</p></div>
+            </div>
+        </div>
+    </section>
+      <!-- Academic Programs -->
+    <section id="programs" class="section programs">
+        <div class="container">
+            <div class="section-title">Academic Programs</div>
+            <div class="section-sub" style="color:white;">From early years to high school – a seamless path to top universities.</div>
+            <div class="cards-grid">
+                <div class="program-card">
+                    
+                    <div class="program-info"><h3>Early Years </h3><p>Play-based learning, emotional growth, and foundational literacy.</p><a href="#" class="learn-link">Learn more →</a></div>
+                </div>
+                <div class="program-card">
+                    
+                    <div class="program-info"><h3>Primary School </h3><p>Core subjects with integrated arts, coding, and hands-on science.</p><a href="#" class="learn-link">Learn more →</a></div>
+                </div>
+                <div class="program-card">
+                    
+                    <div class="program-info"><h3>Middle School </h3><p>Advanced STEM, debate, leadership, and exploratory electives.</p><a href="#" class="learn-link">Learn more →</a></div>
+                </div>
+                <div class="program-card">
+                   
+                    <div class="program-info"><h3>High School </h3><p>AP courses, college counseling, internships, and IB pathways.</p><a href="#" class="learn-link">Learn more →</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- Upcoming Events & CTA combined -->
+    <div class="container">
+        <div class="cta">
+            <h2>Ready to join the Samz family?</h2>
+            <p>Limited seats for academic year 2026-27. Enroll now for a bright future.</p><br>
+            <a href="#" class="btn-primary" style="background:#f97316; "><i class="fas fa-pen-fancy"></i> Admissions Open</a>
+            <div style="margin-top: 30px; display: flex; justify-content: center; gap: 28px; flex-wrap: wrap; font-size: 0.9rem;">
+                <span> Open House: April 20, 2026</span>
+                <span> Annual Sports Day: May 10</span>
+            </div>
+        </div>
+    </div>
+    <!--Audio-->
+    <p style="color:#595909;font-size: 2rem;">Enjoyment is part of us</p>
+        <audio width="360" height="240"  controls>
+<source src="ada_ehi_everything_the_official_video_mp3_30534.mp3" type="audio/mp3">
+Your browser does not surpot the format.
+</audio>
+<!--Video-->
+ <video width="360" height="240"  controls >
+<source src="Njalwala_remix_-_Aaronx_ft_Sheebah(720p).mp4" type="video/mp4">
+Your browser does not surpot the format.
+</video>
+
+
+    <!-- Contact & Footer area -->
+    <section id="contact">
+        <footer>
+            <div class="container footer-grid">
+                <div class="footer-col">
+                    <h4>Samz Academy</h4>
+                    <p> 123 Education Blvd, Knowledge City, 560001</p>
+                    <p> +256 778370940</p>
+                    <p> hello@samz.edu</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <p><a href="#">About Us</a></p>
+                    <p><a href="#">Academics</a></p>
+                    <p><a href="#">Admissions</a></p>
+                    <p><a href="#">Calendar & Events</a></p>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <p><a href="#">Parent Portal</a></p>
+                    <p><a href="#">Student Hub</a></p>
+                    <p><a href="#">Career @ Samz</a></p>
+                    <p><a href="#">Alumni Network</a></p>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect with us</h4>
+                    <p>atalemwasam22@gmail.com</p>
+                    <span><p> +256 778370940</p>
+                    <p> hello@samz.edu</p></span>
+                    </div>
+                  
+                </div>
+            </div>
+            <div class="container copyright">
+                <p class="av">© 2025 Samz Academy — Where excellence meets character. All rights reserved.</p>
+            </div>
+        </footer>
+    </section>
+</main>
+
+
+
+
+
+</body>
+</html>
